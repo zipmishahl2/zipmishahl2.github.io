@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: blanchedalmond;
+    color: white;
+}
+header{
+    display: flex;
+    justify-content: center;
+}
+.Logo, .Top_menu{
+    display: inline-block;
+
+}
+.Top_menu li{
+    display: inline-block;
+    vertical-align: middle;
+}        
+.Top_menu a{
+    font-family: Arial;
+    font-size: 15px;
+    color: white;
+    text-decoration: none;
+}
+.Logo h1{
+    font-family: Arial;
+    font-size: 30px;
+    color: white;
+    
+}    

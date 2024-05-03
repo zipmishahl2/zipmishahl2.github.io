@@ -1,5 +1,5 @@
 const text = document.querySelector(".typing");
-const words = ["Owher DraganOS", "Web Developer", "HTML & CSS & JS Programmer"];
+const words = ["Owher DraganOS", "Web Developer", "HTML & CSS & JS"];
 
 let wordIndex = 0;
 let charIndex = 0;

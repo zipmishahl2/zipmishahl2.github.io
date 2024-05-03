@@ -135,8 +135,8 @@ body {
 .projects-item span {
     display: inline-block;
     background-color: #fff;
-    padding: 5px 5px;
-    margin-bottom: 5px;
+    padding: 10px 10px;
+    margin-bottom: 10px;
     color: #fff;
     border-radius: 5px;
 }

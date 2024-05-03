@@ -1,32 +1,155 @@
-*{
+/*
+Website style.css
+Font - Raleway (https://fonts.google.com/specimen/Raleway)
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700;900&display=swap');
+
+/* 
+Website Font:
+Raleway (400, 600, 700, 900)
+Website Colors:
+#0f0f0f - Background Color
+#181818 - NavBar Color
+#fff - Font Color, Effects Color
+*/
+
+* {
     margin: 0;
     padding: 0;
+    font-family: 'Raleway', sans-serif;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    color: #fff;
 }
-body{
-    background: blanchedalmond;
-    color: white;
-}
-header{
-    display: flex;
-    justify-content: center;
-}
-.Logo, .Top_menu{
-    display: inline-block;
 
+body {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #0f0f0f;
 }
-.Top_menu li{
+
+.navbar {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    border-radius: 15px;
+    background-color: #181818;
+}
+.navbar h2 {
+    position: relative;
+    padding: 5px;
+    cursor: pointer;
+}
+.navbar ul li {
+    list-style: none;
     display: inline-block;
-    vertical-align: middle;
-}        
-.Top_menu a{
-    font-family: Arial;
-    font-size: 15px;
-    color: white;
-    text-decoration: none;
+    margin: 10px 20px;
 }
-.Logo h1{
-    font-family: Arial;
-    font-size: 30px;
-    color: white;
-    
-}    
+.navbar ul li a {
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+.navbar ul li a::after {
+    content: '';
+    width: 0;
+    height: 2px;
+    background: #fff;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: width 0.5s;
+}
+.navbar ul li a:hover::after {
+    width: 100%;
+}
+
+.container {
+    height: 100 vh;
+    margin-top: 20%;
+    margin-left: 10%;
+}
+@keyframes animation {
+    from {
+        opacity: 0;
+        transform: translateY(20%);
+    }
+    to {
+        opacity: 100%;
+        transform: translateY(0);
+    }
+}
+.container.animation {
+    animation-name: animation;
+    animation-duration: 0.75s;
+    animation-fill-mode: both;
+}
+
+.home img {
+    height: 25%;
+    width: 25%;
+    margin-left: 60%;
+    margin-top: -15%;
+    border-radius: 25px;
+}
+
+.typing {
+    position: relative;
+}
+.typing::before {
+    content: "";
+    height: 20px;
+    width: 2px;
+    position: absolute;
+    background: #fff;
+    right: -2px;
+}
+
+.skills-items {
+    display: grid;
+    margin-top: 2%;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 3%;
+}
+.skill-item {
+    background-color: #181818;
+    padding: 12%;
+    border: 2px solid transparent;
+    border-radius: 15px;
+    transition: all 0.3s ease;
+}
+.skill-item:hover {
+    cursor: pointer;
+    border-bottom: 2px solid #fff;
+}
+.skill-item span {
+    display: inline-block;
+    background-color: #fff;
+    padding: 5px 5px;
+    margin-bottom: 5px;
+    color: #fff;
+    border-radius: 5px;
+}
+.skill-item p {
+    margin-top: 2px;
+}
+
+.footer .container {
+    margin-left: 0;
+    width: 100%;
+    background-color: #181818;
+}
+.footer .container p {
+    text-align: center;
+    padding: 10px;
+    }

@@ -115,24 +115,24 @@ body {
     right: -2px;
 }
 
-.skills-items {
+.projects-items {
     display: grid;
     margin-top: 2%;
     grid-template-columns: repeat(4, 1fr);
     gap: 3%;
 }
-.skill-item {
+.projects-item {
     background-color: #181818;
     padding: 12%;
     border: 2px solid transparent;
     border-radius: 15px;
     transition: all 0.3s ease;
 }
-.skill-item:hover {
+.projects-item:hover {
     cursor: pointer;
     border-bottom: 2px solid #fff;
 }
-.skill-item span {
+.projects-item span {
     display: inline-block;
     background-color: #fff;
     padding: 5px 5px;
@@ -140,7 +140,7 @@ body {
     color: #fff;
     border-radius: 5px;
 }
-.skill-item p {
+.projects-item p {
     margin-top: 2px;
 }
 
